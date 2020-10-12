@@ -1,3 +1,5 @@
+# Rubyの基礎を理解する
+
 def fizz_buzz(n)
 	if n % 3 == 0 && n % 5 == 0
 		'Fizz Buzz'
@@ -7,6 +9,18 @@ def fizz_buzz(n)
 		'Buzz'
 	else
 	n.to_s
+	end
+end
+
+def fizz_buzz(m)
+	if m % 15 == 0
+		'Fizz Buzz'
+	elsif m % 3 == 0
+		'Fizz'
+	elsif m  % 5 == 0
+		'Buzz'
+	else
+		n.to_s
 	end
 end
 
