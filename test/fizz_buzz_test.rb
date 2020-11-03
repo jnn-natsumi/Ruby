@@ -1,10 +1,15 @@
-require 'minitest/autorun'
-require './lib/fizz_buzz.rb'
+def findthird
+  num = 1
+  while (num <= 40000) do
+    if (num % 3 == 0 || num.to_s.include?("3"))
+      #3の倍数とは、数字を3で割りき切れる数字なので「%3」
+      #3のつく数字はnumの数を文字列に変換し、「to_s」、
+      #指定した文字列"3"が含まれている場合にtrueを返す条件を加える。「.include?("3")」
+      puts "#{ num }"
+    end
 
-class FizzBuzzTest < Minitest::Test
-	def test_fizz_buzz
-		assert_equal '1', fizz_buzz(1)
-		assert_equal '2', fizz_buzz(2)
-		assert_equal 'Fizz', fizz_buzz(3)
-	end
+    num = num + 1
+  end
 end
+
+findthird
